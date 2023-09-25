@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--base-font);
+    color: var(--dark-solid);
+}
+
+a {
+    text-decoration: none;
+    font-size: 2.0em;
+    font-family: inherit;
+    color: inherit;
+}
+
+header,
+footer { 
+    font-family: var(--alternative-font);
+    color:var(--light-font-solid);
+    background-color: var(--dark-bg-solid); /* en el video el profe lo puso en el archivo css del header y del footer por separado, pero lo puse acá para no repetirlo 2 veces*/
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+p {
+    font-size: 1.8em;
+}
