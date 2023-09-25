@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+
+/* MISCELANEAS */
+
+@import url(./misc/variables.css);
+@import url(./misc/normalize.css);
+@import url(./misc/helpers.css);
+
+/* PARTIALS */
+
+@import url(./partials/footer.css);
+@import url(./partials/header.css);
+
+/* PAGES */
