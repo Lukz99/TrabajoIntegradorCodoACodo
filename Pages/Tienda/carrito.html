@@ -7,29 +7,44 @@
     <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
-    <header><!---INICIO HEADER-->
-        <nav>
-            <picture>
-                <a href="../../index.html"><img src="../../img/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop"></a>
+    <header>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../../multimedia/branding/logo_light_horizontal.svg" alt="Isotipo de la marca Funkoshop">
+                </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item navbar__item--with-submenu">
+                    <a class="navbar__link navbar__link--with-icon" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="./login.html">LOGIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./carrito.html">
-                        <img src="../../img/multimedia/icons/cart-icon.svg" alt="icono de carrito">
-                    </a>
+                <li class="navbar__item">
+                    <picture>
+                        <a class="navbar__cart" href="./carrito.html">
+                            <img src="../../multimedia/icons/cart-icon.svg" alt="Ícono del carrito de compras">
+                        </a>
+                    </picture>
                 </li>
             </ul>
         </nav>
-    </header><!---FIN HEADER-->
+    </header>
     <main><!---INICIO MAIN-->
         <section><!---INICIO CARRITO DE COMPRAS-->
             <h2>CARRITO DE COMPRAS</h2>
@@ -106,24 +121,25 @@
             <a href="">IR A PAGAR</a>
         </section><!---FIN RESUMEN-->
     </main><!---FIN MAIN-->
-    <footer><!---INICIO FOOTER-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="./shop.html">SHOP</a>
+    <footer>
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./shop.html">SHOP</a>
                 </li>
-                <li>
-                    <a href="./">INGRESAR</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
                 </li>
-                <li>
-                    <a href="./">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./">CONTACTO</a>
                 </li>
             </ul>
             <picture>
-                <img src="../../img/multimedia/branding/isotype.svg">
+                <img src="../../multimedia/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
             </picture>
         </nav>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer><!---FIN FOOTER-->
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
