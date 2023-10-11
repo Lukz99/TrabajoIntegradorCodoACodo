@@ -1,0 +1,20 @@
+/* MISC */
+@import url(./misc/variables.css);
+@import url(./misc/normalize.css);
+@import url(./misc/animations.css);
+
+/* COMPONENTS */
+@import url(./components/header.css);
+@import url(./components/footer.css);
+
+/* PAGES */
+@import url(./pages/admin/admin.css);
+@import url(./pages/admin/create.css);
+@import url(./pages/admin/edit.css);
+@import url(./pages/admin/login.css);
+@import url(./pages/admin/register.css);
+
+@import url(./pages/tienda/cart.css);
+@import url(./pages/tienda/home.css);
+@import url(./pages/tienda/item.css);
+@import url(./pages/tienda/shop.css);
