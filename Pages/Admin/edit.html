@@ -5,60 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funkoshop</title>
-    <link rel="stylesheet" href="./css/create.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/header_footer.css">
+    <link rel="stylesheet" href="../../css/admin/create.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <header>
-
+   
+    <header class="main"><!---INICIO HEADER-->
+        <nav>
+            <picture>
+                <a href="../../index.html">
+                    <img src="../../img/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
+                    <img src="../../img/multimedia/branding/Funkoshop.png" alt="Funkoshop">
+                </a>
+            </picture>
+            <ul>
+                <li>
+                    <a href="./shop.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="../admin/login.html">LOGIN</a>
+                </li>
+                <li>
+                    <picture>
+                        <a href="./cart.html">
+                            <img src="../../img/multimedia/icons/cart-icon.svg" alt="Ícono de carrito de compras">
+                        </a>
+                    </picture>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-
         <header class="title">
             <h1>EDITAR ITEM</h1>
         </header>
-
         <article class="options">
             <h3>Categoría: </h3>
-            <ul>placeholder: Seleccionar</ul>
+            <div class = "fillText">Figuras</div>
             
             <h3>Licencia:</h3>
-            <ul>placeholder: Seleccionar</ul>
+            <div class = "fillText">Naruto Shippuden</div>
             
         </article>
-
+        
         <article class="productName">
             <h2>Nombre del producto:</h2>
-            <ul>placeholder: Kakashi Hatuke Shippuden Saga</ul>
+                <div class = "fillText">
+                    Kakashi Hatuke Shippuden Saga
+                </div>
         </article>
+
         <figure class="productDescription">
-            placeholder: Descripción del producto
+            <textarea name="inputDescription" id="inputDescription" cols="80" rows="10">
+                Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shippuden invocando chidori.
+            </textarea>            
         </figure>
+
         <article class="productInfo">
             <h2>SKU: </h2>
-            <ul>
-                placeholder: SSK111AB001
-            </ul>
+            <div class = "fillText">NAR001012</div>
+
             <h2>Precio: </h2>
-            <ul>
-                placeholder: $0.000,0
-            </ul>
+            <div class = "fillText">$1.799,0</div>
+
             <h2>Stock: </h2>
-            <ul>
-                placeholder: 0
-            </ul>
+            <div class = "fillText">10</div>
         </article>
 
         <article class="productPayment">
             <h2>Descuento: </h2>
-            <ul>
-                placeholder: 0%
-            </ul>
+            <div class = "fillText">10%</div>
+            
             <h2>Cuotas: </h2>
-            <ul>
-                placeholder: 3 Cuotas sin interés
-            </ul>
+            <div class = "fillText">6 Cuotas sin interés</div>
         </article>
 
         <article class="uploadImages">
@@ -67,15 +94,40 @@
             <p>No se ha seleccionado ningún archivo</p>
         </article>
 
-        <button>Agregar Producto</button>
-        <button>Limpiar</button>
-
+        <article class="productImages">
+            <picture class="frontPicture">
+                <img src="../../img/multimedia/products/kakashi_hatake_front.png" alt="imagen del frente del producto" class="frontImg">
+                <p>Frente</p>
+            </picture>
+            <picture class="backPicture">
+                <img src="../../img/multimedia/products/kakashi_hatake_back.png" alt="imagen del dorso del producto" class="backImg">
+                <p>Dorso</p>
+            </picture>
+        </article>
+        
+        <button>Modificar Producto</button>
 
     </main>
-    
-    <footer>
-        
-    </footer>
+
+    <footer><!---INICIO FOOTER-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="./shop.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="../admin/login.html">INGRESAR</a>
+                </li>
+                <li>
+                    <a href="./">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../../img/multimedia/branding/isotype.svg">
+            </picture>
+        </nav>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer><!---FIN FOOTER-->
 
 
 </body>
