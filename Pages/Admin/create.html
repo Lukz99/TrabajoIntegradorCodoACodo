@@ -5,35 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funkoshop</title>
-    <link rel="stylesheet" href="../../css/admin/create.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway:wght@700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="../../css/index.css">
+   
 </head>
 <body>
     
-    <header><!---INICIO HEADER-->
-        <nav>
-            <picture>
-                <a href="../../index.html">
-                    <img src="../../img/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
+    <header>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="../../multimedia/branding/logo_light_horizontal.svg" alt="Isotipo de la marca Funkoshop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item navbar__item--with-submenu">
+                    <a class="navbar__link navbar__link--with-icon" href="./Pages/Tienda/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="../admin/login.html">LOGIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./Pages/Admin/login.html">LOGIN</a>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <picture>
-                        <a href="./cart.html">
-                            <img src="../../img/multimedia/icons/cart-icon.svg" alt="Ícono de carrito de compras">
+                        <a class="navbar__cart" href="./cart.html">
+                            <img src="./multimedia/icons/cart-icon.svg" alt="Ícono del carrito de compras">
                         </a>
                     </picture>
                 </li>
@@ -42,63 +50,77 @@
     </header>
 
     <main>
-
-        <header class="title">
-            <h1>CREAR NUEVO ITEM</h1>
-        </header>
-
-        <article class="options">
-            <h3>Categoría: </h3>
-            <ul>placeholder: Seleccionar</ul>
+        <section class="hero">
+            <h1 class="title">CREAR ITEM</h1>
             
-            <h3>Licencia:</h3>
-            <ul>placeholder: Seleccionar</ul>
-            
-        </article>
+            <article class="options">
+                <h2>Categoría:</h2>
 
-        <article class="productName">
-            <h2>Nombre del producto:</h2>
-            <ul>placeholder: Kakashi Hatuke Shippuden Saga</ul>
-        </article>
-        <figure class="productDescription">
-            placeholder: Descripción del producto
-        </figure>
-        <article class="productInfo">
-            <h2>SKU: </h2>
-            <ul>
-                placeholder: SSK111AB001
-            </ul>
-            <h2>Precio: </h2>
-            <ul>
-                placeholder: $0.000,0
-            </ul>
-            <h2>Stock: </h2>
-            <ul>
-                placeholder: 0
-            </ul>
-        </article>
+                <form class="form" action="#">
+                    <select name="categoria" id="categoria">
+                        <option value="" disabled selected>Seleccionar...</option>
+                        <option value="figuras1">Figuras1</option>
+                        <option value="figuras2">Figuras2</option>
+                        <option value="figuras3">Figuras3</option>
+                    </select>
+                </form>
 
-        <article class="productPayment">
-            <h2>Descuento: </h2>
-            <ul>
-                placeholder: 0%
-            </ul>
-            <h2>Cuotas: </h2>
-            <ul>
-                placeholder: 3 Cuotas sin interés
-            </ul>
-        </article>
+                    
+                <h2>Licencia:</h2>
+                <form action="#">
+                    <select name="licencia" id="licencia">
+                      <option value="naruto1">Naruto Shippuden</option>
+                      <option value="naruto2">Naruto Shippuden2</option>
+                      <option value="naruto3">Naruto Shippuden3</option>
+                    </select>
+                </form>
+                
+                
+            </article>
 
-        <article class="uploadImages">
-            <h2>Imágenes:</h2>
-            <button>Elegir archivos</button>
-            <p>No se ha seleccionado ningún archivo</p>
-        </article>
+            <article class="productName">
+                <h2>Nombre del producto:</h2>
+                <ul>placeholder: Kakashi Hatuke Shippuden Saga</ul>
+            </article>
+            <figure class="productDescription">
+                placeholder: Descripción del producto
+            </figure>
+            <article class="productInfo">
+                <h2>SKU: </h2>
+                <ul>
+                    placeholder: SSK111AB001
+                </ul>
+                <h2>Precio: </h2>
+                <ul>
+                    placeholder: $0.000,0
+                </ul>
+                <h2>Stock: </h2>
+                <ul>
+                    placeholder: 0
+                </ul>
+            </article>
 
-        <button>Agregar Producto</button>
-        <button>Limpiar</button>
+            <article class="productPayment">
+                <h2>Descuento: </h2>
+                <ul>
+                    placeholder: 0%
+                </ul>
+                <h2>Cuotas: </h2>
+                <ul>
+                    placeholder: 3 Cuotas sin interés
+                </ul>
+            </article>
 
+            <article class="uploadImages">
+                <h2>Imágenes:</h2>
+                <button>Elegir archivos</button>
+                <p>No se ha seleccionado ningún archivo</p>
+            </article>
 
+            <button>Agregar Producto</button>
+            <button>Limpiar</button>
+
+        </section>
     </main>
     
     <footer><!---INICIO FOOTER-->

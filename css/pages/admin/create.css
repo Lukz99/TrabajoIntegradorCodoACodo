@@ -7,35 +7,42 @@ main {
 h1 {
     color: #1F1F1F;
     text-align: left;
-    font-family: Raleway;
-    font-size: 2.625rem;
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.105rem;
+    letter-spacing: var(--spacing-1);
 }
 
 h2 {
     color: #000;
     text-align: right;
-    font-family: Inter;
-    font-size: 1.5rem;
+    font-family: var(--base-font);
+    font-size: var(--font-large);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.06rem;
 }
 
+p {
+    text-align: center;
+}
+
 .fillText {
     display: flex;
     border-bottom: 1px solid #F33;
     align-items: center;
-    margin: 1rem;
+    padding: 1rem;
+    font-size: var(--font-medium);
 }
 
 .options {
     display: flex;
+    
 }
+
 
 .productName {
     display: flex;
@@ -59,6 +66,7 @@ h2 {
 }
 
 .backImg, .frontImg{
-    width: 7rem;
+    width: 150px;
+    height: 150px;
     border-bottom: 1px solid red;
 }

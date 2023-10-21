@@ -6,122 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funkoshop</title>
     <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="../../css/header_footer.css">
-    <link rel="stylesheet" href="../../css/admin/create.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway:wght@700&display=swap" rel="stylesheet">
+   
 </head>
 <body>
    
-    <header class="main"><!---INICIO HEADER-->
-        <nav>
-            <picture>
-                <a href="../../index.html">
-                    <img src="../../img/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
-                    <img src="../../img/multimedia/branding/Funkoshop.png" alt="Funkoshop">
+    <header>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="../../multimedia/branding/logo_light_horizontal.svg" alt="Isotipo de la marca Funkoshop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="#TODO">VER TIENDA</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item navbar__item--with-submenu">
+                    <a class="navbar__link navbar__link--with-icon" href="./Pages/Tienda/shop.html">VER TIENDA</a>
                 </li>
-                <li>
-                    <a href="#TODO">ADMIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">ADMIN</a>
                 </li>
-                <li>
-                    <a href="#TODO">SALIR</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../index.html">SALIR</a>
                 </li>
-                
             </ul>
         </nav>
     </header>
 
     <main>
-        <header class="title">
-            <h1>EDITAR ITEM</h1>
-        </header>
-        <article class="options">
-            <h3>Categoría: </h3>
-            <div class = "fillText">Figuras</div>
+        <section class="hero">
+            <h1 class="title">EDITAR ITEM</h1>
+       
+            <article class="options">
+                <h2>Categoría:</h2>
+
+                <form class="form" action="#">
+                    <select name="categoria" id="categoria">
+                      <option value="figuras1">Figuras1</option>
+                      <option value="figuras2">Figuras2</option>
+                      <option value="figuras3">Figuras3</option>
+                    </select>
+                </form>
+
+                    
+                <h2>Licencia:</h2>
+                <form action="#">
+                    <select name="licencia" id="licencia">
+                      <option value="naruto1">Naruto Shippuden</option>
+                      <option value="naruto2">Naruto Shippuden2</option>
+                      <option value="naruto3">Naruto Shippuden3</option>
+                    </select>
+                </form>
+                
+                
+            </article>
             
-            <h3>Licencia:</h3>
-            <div class = "fillText">Naruto Shippuden</div>
+            <article class="productName">
+                <h3>Nombre del producto:</h3>
+                    <div class = "fillText">
+                        Kakashi Hatuke Shippuden Saga
+                    </div>
+            </article>
+
+            <figure class="productDescription">
+                <textarea name="inputDescription" id="inputDescription" cols="80" rows="10">
+                    Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shippuden invocando chidori.
+                </textarea>            
+            </figure>
+
+            <article class="productInfo">
+                <h3>SKU: </h3>
+                <div class = "fillText">NAR001012</div>
+
+                <h3>Precio: </h3>
+                <div class = "fillText">$1.799,0</div>
+
+                <h3>Stock: </h3>
+                <div class = "fillText">10</div>
+            </article>
+
+            <article class="productPayment">
+                <h3>Descuento: </h3>
+                <div class = "fillText">10%</div>
+                
+                <h3>Cuotas: </h3>
+                <div class = "fillText">6 Cuotas sin interés</div>
+            </article>
+
+            <article class="uploadImages">
+                <h3>Imágenes:</h3>
+                <button>Elegir archivos</button>
+                <p>No se ha seleccionado ningún archivo</p>
+            </article>
+
+            <article class="productImages">
+                <picture class="frontPicture">
+                    <img src="../../multimedia/products/kakashi_hatake_front.png" alt="imagen del frente del producto" class="frontImg">
+                    <p>Frente</p>
+                </picture>
+                <picture class="backPicture">
+                    <img src="../../multimedia/products/kakashi_hatake_back.png" alt="imagen del dorso del producto" class="backImg">
+                    <p>Dorso</p>
+                </picture>
+            </article>
             
-        </article>
-        
-        <article class="productName">
-            <h2>Nombre del producto:</h2>
-                <div class = "fillText">
-                    Kakashi Hatuke Shippuden Saga
-                </div>
-        </article>
-
-        <figure class="productDescription">
-            <textarea name="inputDescription" id="inputDescription" cols="80" rows="10">
-                Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shippuden invocando chidori.
-            </textarea>            
-        </figure>
-
-        <article class="productInfo">
-            <h2>SKU: </h2>
-            <div class = "fillText">NAR001012</div>
-
-            <h2>Precio: </h2>
-            <div class = "fillText">$1.799,0</div>
-
-            <h2>Stock: </h2>
-            <div class = "fillText">10</div>
-        </article>
-
-        <article class="productPayment">
-            <h2>Descuento: </h2>
-            <div class = "fillText">10%</div>
-            
-            <h2>Cuotas: </h2>
-            <div class = "fillText">6 Cuotas sin interés</div>
-        </article>
-
-        <article class="uploadImages">
-            <h2>Imágenes:</h2>
-            <button>Elegir archivos</button>
-            <p>No se ha seleccionado ningún archivo</p>
-        </article>
-
-        <article class="productImages">
-            <picture class="frontPicture">
-                <img src="../../img/multimedia/products/kakashi_hatake_front.png" alt="imagen del frente del producto" class="frontImg">
-                <p>Frente</p>
-            </picture>
-            <picture class="backPicture">
-                <img src="../../img/multimedia/products/kakashi_hatake_back.png" alt="imagen del dorso del producto" class="backImg">
-                <p>Dorso</p>
-            </picture>
-        </article>
-        
-        <button>Modificar Producto</button>
-
+            <button class="card-item__tag">Modificar Producto</button>
+        </section>
     </main>
 
-    <footer><!---INICIO FOOTER-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="./shop.html">SHOP</a>
+    <footer>
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../Tienda/shop.html">SHOP</a>
                 </li>
-                <li>
-                    <a href="../admin/login.html">INGRESAR</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./login.html">INGRESAR</a>
                 </li>
-                <li>
-                    <a href="./">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./contacto.html">CONTACTO</a>
                 </li>
             </ul>
             <picture>
-                <img src="../../img/multimedia/branding/isotype.svg">
+                <img src="../../multimedia/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
             </picture>
         </nav>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer><!---FIN FOOTER-->
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 
 
 </body>
