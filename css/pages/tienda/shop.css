@@ -129,3 +129,135 @@
     background-color: var(--dark-300);
     opacity: 0.5;
 }
+
+/* ASIDE */
+
+/* form */
+
+.shop__aside__form{
+    max-width: 243px;
+    position: sticky;
+    top:var(--spacing-28);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-28);
+    font-family: var(--base-font);
+    color: var(--dark-300);
+    text-transform: uppercase;
+}
+
+.shop__form__item{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+}
+
+/* labels */
+
+.shop__aside__label{
+    font-size: var(--font-large);
+    color: var(--dark-900);
+    font-weight: 500;
+}
+
+.shop__aside__price-label{
+    font-size: var(--font-small);
+    color: var(--dark-900);
+    font-weight: 500;
+}
+
+.shop__aside__checkbox-label{
+    font-size: var(--font-medium);
+    color: var(--dark-900);
+}
+
+/* input rectangle */
+
+.shop__aside__input-large{
+    width: 100%;
+    border-radius: 6px;
+    font-size: var(--font-medium);
+    padding: var(--spacing-8);
+}
+
+.shop__aside__input-small{
+    width: 25%;
+    text-align: center;
+    border-radius: 6px;
+    padding: var(--spacing-8);
+}
+
+/* containers */
+
+.shop__aside__price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop__aside__checkbox-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--spacing-12);
+}
+
+
+/* MAIN */
+
+.shop__main{
+    margin: var(--spacing-68);
+}
+
+/* SHOP */
+
+.shop__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-items__container{
+    gap: var(--spacing-68);
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: var(--spacing-12);
+}
+
+.shop__items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: var(--spacing-36);
+}
+
+.shop__item{
+    max-width: 33.3%;
+}
+
+/* PAGINATION */
+
+.shop__pagination{
+    display: flex;
+    gap: var(--spacing-8);
+}
+
+.shop__pagination__button{
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid var(--dark-300);
+    background-color: var(--light-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+.shop__pagination__button:focus{
+    border: 1px solid var(--primary-solid);
+    color: var(--primary-solid);
+}
+
+.shop__pagination__button:first-child{
+    background-color: var(--dark-300);
+    opacity: 0.5;
+}
