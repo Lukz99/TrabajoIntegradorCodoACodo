@@ -67,9 +67,7 @@
             </article>
 
             <figure class="productDescription">
-                <textarea name="inputDescription" id="inputDescription" cols="80" rows="10">
-                    Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shippuden invocando chidori.
-                </textarea>            
+                <textarea name="inputDescription" id="inputDescription" cols="80" rows="10">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shippuden invocando chidori.</textarea>            
             </figure>
 
             <article class="productInfo">
@@ -88,12 +86,18 @@
                 <div class = "fillText">10%</div>
                 
                 <h3>Cuotas: </h3>
-                <div class = "fillText">6 Cuotas sin interés</div>
+                <form action="#">
+                    <select name="cuotas" id="cuotas">
+                      <option value="cuotas6">6 Cuotas sin interés</option>
+                      <option value="cuotas3">3 Cuotas sin interés</option>
+                      <option value="cuotas12">12 Cuotas sin interés</option>
+                    </select>
+                </form>
             </article>
 
             <article class="uploadImages">
                 <h3>Imágenes:</h3>
-                <button>Elegir archivos</button>
+                <button class="uploadButton">Elegir archivos</button>
                 <p>No se ha seleccionado ningún archivo</p>
             </article>
 
@@ -117,6 +121,9 @@
             <ul class="navbar__item">
                 <li class="navbar__item">
                     <a class="navbar__link" href="../Tienda/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./register.html">REGISTRARSE</a>
                 </li>
                 <li class="navbar__item">
                     <a class="navbar__link" href="./login.html">INGRESAR</a>

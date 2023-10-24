@@ -11,6 +11,7 @@ main {
 select {
     border-radius: 3px;
     border: 1px solid var(--dark-bg-solid);
+    padding: 0.5rem;
 }
 
 .card-item__tag {
@@ -20,6 +21,7 @@ select {
     padding: var(--spacing-8) var(--spacing-12);
     border: none;
     width: 175px;
+    height: 44px;
 }
 
 article {
@@ -30,10 +32,18 @@ article {
 }
 
 .title {
+    font-size: 4.2rem;
     margin-bottom: 5rem;
 }
 
 h3 {
     font-size: var(--font-large);
     font-weight: 400;
+}
+
+textarea  {  
+   font-family: var(--base-font);
+   font-size: var(--font-large);
+   height: 195px;
+   width: 1012px;
 }

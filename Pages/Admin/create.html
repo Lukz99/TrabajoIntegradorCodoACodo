@@ -19,31 +19,13 @@
             </picture>
             <ul class="navbar__menu">
                 <li class="navbar__item navbar__item--with-submenu">
-                    <a class="navbar__link navbar__link--with-icon" href="./Pages/Tienda/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Llaveros</a>
-                        </li>
-                    </ul>
+                    <a class="navbar__link navbar__link--with-icon" href="./Pages/Tienda/shop.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="">CONTACTO</a>
+                    <a class="navbar__link" href="">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="./Pages/Admin/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <picture>
-                        <a class="navbar__cart" href="./cart.html">
-                            <img src="./multimedia/icons/cart-icon.svg" alt="Ícono del carrito de compras">
-                        </a>
-                    </picture>
+                    <a class="navbar__link" href="../../index.html">SALIR</a>
                 </li>
             </ul>
         </nav>
@@ -57,7 +39,7 @@
                 <h2>Categoría:</h2>
 
                 <form class="form" action="#">
-                    <select name="categoria" id="categoria">
+                    <select name="categoria" required>
                         <option value="" disabled selected>Seleccionar...</option>
                         <option value="figuras1">Figuras1</option>
                         <option value="figuras2">Figuras2</option>
@@ -67,11 +49,12 @@
 
                     
                 <h2>Licencia:</h2>
-                <form action="#">
-                    <select name="licencia" id="licencia">
-                      <option value="naruto1">Naruto Shippuden</option>
-                      <option value="naruto2">Naruto Shippuden2</option>
-                      <option value="naruto3">Naruto Shippuden3</option>
+                <form class="form" action="#">
+                    <select name="categoria" required>
+                        <option value="" disabled selected>Seleccionar...</option>
+                        <option value="naruto1">Naruto1</option>
+                        <option value="naruto2">Naruto2</option>
+                        <option value="naruto3">Naruto3</option>
                     </select>
                 </form>
                 
@@ -79,69 +62,86 @@
             </article>
 
             <article class="productName">
-                <h2>Nombre del producto:</h2>
-                <ul>placeholder: Kakashi Hatuke Shippuden Saga</ul>
+                <h3>Nombre del producto:</h3>
+                    <input type="text" class = "fillText" placeholder="Kakashi Hatuke Shippuden Saga">
+                        
+                    </input>
             </article>
+
             <figure class="productDescription">
-                placeholder: Descripción del producto
+                <textarea name="inputDescription" id="inputDescription" cols="80" rows="10">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shippuden invocando chidori.</textarea>            
             </figure>
+
             <article class="productInfo">
-                <h2>SKU: </h2>
-                <ul>
-                    placeholder: SSK111AB001
-                </ul>
-                <h2>Precio: </h2>
-                <ul>
-                    placeholder: $0.000,0
-                </ul>
-                <h2>Stock: </h2>
-                <ul>
-                    placeholder: 0
-                </ul>
+                <h3>SKU: </h3>
+                <input type="text" class = "fillText" placeholder="SSK111AB001">
+                        
+                    </input>
+
+                <h3>Precio: </h3>
+                <input type="text" class = "fillText" placeholder="$0.000,0">
+
+                <h3>Stock: </h3>
+                <input type="text" class = "fillText" placeholder="0">
             </article>
 
             <article class="productPayment">
-                <h2>Descuento: </h2>
-                <ul>
-                    placeholder: 0%
-                </ul>
-                <h2>Cuotas: </h2>
-                <ul>
-                    placeholder: 3 Cuotas sin interés
-                </ul>
+                <h3>Descuento: </h3>
+                <input type="text" class = "fillText" placeholder="0%">
+                
+                <h3>Cuotas: </h3>
+                <form action="#">
+                    <select name="cuotas" id="cuotas" required>
+                        <option value="" disabled selected>3 Cuotas sin interés</option>
+                        <option value="cuotas6">3 Cuotas sin interés</option>
+                        <option value="cuotas6">6 Cuotas sin interés</option>                        
+                        <option value="cuotas12">12 Cuotas sin interés</option>
+                    </select>
+                </form>
             </article>
 
             <article class="uploadImages">
-                <h2>Imágenes:</h2>
-                <button>Elegir archivos</button>
+                <h3>Imágenes:</h3>
+                <button class="uploadButton">Elegir archivos</button>
                 <p>No se ha seleccionado ningún archivo</p>
             </article>
 
-            <button>Agregar Producto</button>
-            <button>Limpiar</button>
+            
+            
+            <div class="buttons">
+                <button class="card-item__tag">Agregar Producto</button>
+                <button class="card-item__tag">Limpiar</button>
+            </div>
+
+
 
         </section>
     </main>
     
-    <footer><!---INICIO FOOTER-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="./shop.html">SHOP</a>
+    
+    <footer>
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../Tienda/shop.html">SHOP</a>
                 </li>
-                <li>
-                    <a href="../admin/login.html">INGRESAR</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./register.html">REGISTRARSE</a>
                 </li>
-                <li>
-                    <a href="./">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./contacto.html">CONTACTO</a>
                 </li>
             </ul>
             <picture>
-                <img src="../../img/multimedia/branding/isotype.svg">
+                <img src="../../multimedia/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
             </picture>
         </nav>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer><!---FIN FOOTER-->
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 
 
 </body>

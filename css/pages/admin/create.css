@@ -32,7 +32,7 @@ p {
 
 .fillText {
     display: flex;
-    border-bottom: 1px solid #F33;
+    border-bottom: 2px solid #F33;
     align-items: center;
     padding: 1rem;
     font-size: var(--font-medium);
@@ -68,5 +68,37 @@ p {
 .backImg, .frontImg{
     width: 150px;
     height: 150px;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid red;
+}
+
+select:required:invalid {
+    color: rgb(142, 142, 142);
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+option {
+    color: var(--dark-solid);
+}
+
+input {
+    border: 0px solid;
+}
+
+input:focus {
+   outline: none;
+   
+}
+
+.uploadButton {
+    background: rgba(217, 217, 217, 0.63);
+    border-radius: 3px;
+    border: 1px rgba(48, 52, 63, 0.70) solid;
+}
+
+.buttons {
+    display:flex;
+    gap: 3rem;
 }
